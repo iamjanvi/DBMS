@@ -1,0 +1,65 @@
+create table doctor
+( d_id number(3),
+    d_name varchar2(20) not null,
+    degree varchar2(20),
+salary number(3)
+);
+
+
+create table patient
+( p_id number(3),
+    p_name varchar2(20) not null,
+    disease varchar2(20) ,
+charges number(5),
+d_id number(3)
+);lter table doctor add primary key(d_id);
+
+
+alter table patient add foreign key(d_id) references doctor(d_id);
+
+insert into doctor values(1,'yagnesh','MD',700);
+
+
+insert into patient values(101,'khh','malaria','60000',1);
+
+commit;
+
+update patient set disease='cancer'  where charges>50000;rollback;
+
+
+insert into doctor values(2,'janvi','MBBS',500);
+
+
+insert into patient values(102,'ghdh','thaipod','40000',2);
+
+
+commit;
+
+
+alter table doctor drop column degree;
+
+
+drop table patient;
+
+
+drop table doctor;
+
+
+
+select extract(year from sysdate)from dual;
+
+
+
+select sign(-146),sign(0),sign(146) from dual;
+
+
+select ltrim('    hello') from dual;
+
+
+select rtrim('hello     ') from dual;
+
+
+select trim('    hello    ') from dual;
+
+
+select * from tab;
