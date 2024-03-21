@@ -42,7 +42,7 @@ select floor(-4.99) from dual;
 select mod(7,2) from dual;
 
 
-select mod(-7,2);
+select mod(-7,2) from dual;
 
 select power(3,2) from dual;
 
