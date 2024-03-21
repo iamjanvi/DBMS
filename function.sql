@@ -78,7 +78,7 @@ select LENGTH('hello') from dual;
 
 select lower('ORACLE') from dual;
 
-select LPAD(' ABC',5,'*')+from dual;
+select LPAD(' ABC',5,'*') from dual;
 
 select LTRIM('      hello ') from dual;
 
