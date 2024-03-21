@@ -1,6 +1,6 @@
 
 
-select cureent_date from dual;
+select current_date from dual;
 
 select sysdate from dual;
 
